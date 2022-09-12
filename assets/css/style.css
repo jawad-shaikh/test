@@ -2048,8 +2048,8 @@ a:visited {
 .fact-one__single {
   -webkit-box-shadow: 0px 20px 60px 0px rgba(42, 40, 51, 0.05);
           box-shadow: 0px 20px 60px 0px rgba(42, 40, 51, 0.05);
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2813,4 +2813,46 @@ a:visited {
   transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
   transition: transform .4s ease, -webkit-transform .4s ease;
+}
+.fact-one__single img{
+  width: 100%;
+}
+
+.team-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin: 100px 0px;
+  flex-wrap: wrap;
+}
+.team-view {
+  width: 280px;
+}
+
+.team-view .team-image-area {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.team-view .team-image-area img {
+  width: 100%;
+  border-radius: 50%;
+  transition:transform 200ms, filter 200ms linear;
+}
+
+.team-position {
+  text-align: center;
+  margin: 20px 0px;
+}
+.team-view:hover > .team-image-area img {
+  transform: scale(1.1);
+  filter: grayscale(1);
+  transition:transform 200ms, filter 200ms linear;
+}
+.team-position h4{
+  color: #111;
+  font-weight: bolder;
 }
